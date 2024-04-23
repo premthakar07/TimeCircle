@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F5F2;
+}
+
+header {
+    background-color: #828282;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a.active {
+    background-color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(165, 165, 165);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="page11.html" class="active">About Us</a></li>
+                <li><a href="page11.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>About Us</h1>
+        <p>We are a leading watch retailer, offering a wide range of stylish and high-quality watches to our customers. Our mission is to provide exceptional timepieces that combine elegance, functionality, and affordability.</p>
+        <p>With years of experience in the industry, our team is passionate about watches and dedicated to delivering excellent customer service. Whether you're looking for a classic timepiece or a modern smartwatch, we have something for everyone.</p>
+        <p>At [TimeCircle Watches], our mission is to provide unparalleled access to a diverse range of high-quality watches that cater to every style and occasion. We strive to be more than just a marketplace; we aim to be a trusted companion on your journey to finding the perfect timepiece, offering expertise, guidance, and an exceptional shopping experience.
+            Our Values:
+            Quality: We are committed to offering only the highest quality watches from reputable brands and artisans known for their craftsmanship and attention to detail.
+            Integrity: Transparency and honesty are at the core of everything we do. We believe in building lasting relationships with our customers based on trust and reliability.</p>
+    </div>
+
+    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or inquiries, please feel free to contact us using the form below or the contact information provided.</p>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

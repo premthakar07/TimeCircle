@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.payment-details {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.payment-options {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.payment-method {
+    margin-bottom: 10px;
+}
+
+.watch-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.watch-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.payment-details h2,
+.payment-options h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payment-options">
+        <h2>Payment Options</h2>
+        <div class="payment-method">
+            <input type="radio" id="gpay" name="payment-method" checked>
+            <label for="gpay">G Pay</label>
+        </div>
+        <div class="payment-method">
+            <input type="radio" id="phonepay" name="payment-method">
+            <label for="phonepay">Phone Pay</label>
+        </div>
+        <div class="payment-method">
+            <input type="radio" id="card" name="payment-method">
+            <label for="card">Debit/Credit Card</label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="payment-details">
+            <h2>Payment Details</h2>
+           
+            <form id="payment-form">
+                <label for="name">Name on Card:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <label for="expiry">Expiration Date:</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                <button type="submit">Submit Payment</button>
+            </form>
+        </div>
+        <div class="watch-image">
+            <img src="watch.jpg" alt="Watch Image">
+        </div>
+    </div>
+</body>
+</html>
+<div class="container">
+    <div class="payment-details">
+        <h2>Payment Details</h2>
+       
+        <form id="payment-form">
+            <label for="name">Name on Card:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            <label for="expiry">Expiration Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>

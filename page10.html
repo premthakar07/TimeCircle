@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Purchase Payment</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #dbdbdb;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.options {
+        flex: 1;
+        padding: 20px;
+    }
+    .radio-group {
+        margin-bottom: 20px;
+    }
+    .radio-group label {
+       
+        margin-bottom: 10px;
+    }
+    
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Purchase your watch </h1>
+    <div class="options">
+      <div class="radio-group">
+          <input type="radio" id="debit-credit" name="payment-option" value="debit-credit">
+          <label for="debit-credit">Debit or Credit Card</label>
+      </div>
+      <div class="radio-group">
+          <input type="radio" id="image1" name="payment-option" value="image1">
+          <label for="image1"><img src="PhonePe-Logo.wine.png" style="width: 20%; height: 20%;"></label>
+      </div>
+      <div class="radio-group">
+          <input type="radio" id="image2" name="payment-option" value="image2">
+          <label for="image2"><img src="Google_Pay_Logo.svg.png" style="width: 13%; height: 13%;"></label>
+      </div>
+  </div>
+    <form action="">
+      <div class="form-group">
+      
+
+      <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="enter your card number">
+      </div>
+      <div class="form-group">
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="card verification value">
+      </div>
+      <div class="form-group">
+        <label for="name">Name on Card:</label>
+        <input type="text" id="name" name="name" placeholder="enter your name on card">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="eneter your email">
+      </div>
+      <button type="submit">Pay Now</button>
+    </form>
+    
+ 
+</div>
+</body>
+</html>
